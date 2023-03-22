@@ -6,7 +6,8 @@ import lombok.*;
 
 
 
-
+@AllArgsConstructor
+@RequiredArgsConstructor
 @Data
 public class BookEntity {
     private String id;

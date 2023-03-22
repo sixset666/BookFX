@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client1.controllers.EditBookController">
    <children>
       <GridPane layoutX="77.0" layoutY="74.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -93,7 +92,7 @@
             </TextField>
          </children>
       </GridPane>
-      <Button layoutX="145.0" layoutY="264.0" mnemonicParsing="false" text="Сохранить" />
-      <Button layoutX="244.0" layoutY="264.0" mnemonicParsing="false" text="Закрыть" />
+      <Button layoutX="145.0" layoutY="264.0" mnemonicParsing="false" onAction="#goSave" text="Сохранить" />
+      <Button layoutX="244.0" layoutY="264.0" mnemonicParsing="false" onAction="#goBack" text="Закрыть" />
    </children>
 </AnchorPane>

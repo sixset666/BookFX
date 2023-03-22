@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client1.controllers.ApplicationController">
    <children>
       <AnchorPane prefHeight="435.0" prefWidth="600.0">
          <children>
@@ -31,14 +31,14 @@
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Добавить" />
+                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#isOkCliked" text="Добавить" />
                                     <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Редактировать" GridPane.rowIndex="1" />
                                     <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Удалить" GridPane.rowIndex="2" />
                                  </children>
                               </GridPane>
                               <AnchorPane layoutX="141.0" layoutY="4.0" prefHeight="335.0" prefWidth="454.0">
                                  <children>
-                                    <TableView layoutX="-3.0" layoutY="-3.0" prefHeight="343.0" prefWidth="464.0">
+                                    <TableView fx:id="tableBooks" layoutX="-3.0" layoutY="-3.0" prefHeight="343.0" prefWidth="464.0">
                                       <columns>
                                         <TableColumn prefWidth="75.0" text="id" visible="false" />
                                         <TableColumn prefWidth="75.0" text="Название" />
@@ -68,8 +68,8 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Добавить" />
-                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Редактировать" GridPane.rowIndex="1" />
+                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#isOkCliked" text="Добавить" />
+                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goEdit" text="Редактировать" GridPane.rowIndex="1" />
                                     <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Удалить" GridPane.rowIndex="2" />
                                  </children>
                               </GridPane>
@@ -104,7 +104,7 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Добавить" />
+                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#isOkCliked" text="Добавить" />
                                     <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Редактировать" GridPane.rowIndex="1" />
                                     <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Удалить" GridPane.rowIndex="2" />
                                  </children>
